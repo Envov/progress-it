@@ -1,0 +1,1 @@
+## 🤘🏼map boolean as floating number
