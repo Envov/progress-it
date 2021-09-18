@@ -8,8 +8,8 @@ npm install progress-it
 ```javascript
 import progress from "progress-it"
 const effect=console.log
-const stateSet = progress(effect)(false);
-const finish=(set=>()=>set(true))(stateSet)
+const stateSetter = progress(effect)(false);
+const finish=(set=>()=>set(true))(stateSetter)
 setTimeout(finish,1000)
 ```
 
