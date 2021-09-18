@@ -10,7 +10,7 @@ export interface IProgressPotions {
   timeLine: number;
   timer: number | undefined;
 }
-const progress = (effect: Effect) => (state: boolean, option: Partial<IProgressPotions>) => {
+const progress = (effect: Effect, option: Partial<IProgressPotions>) => (state: boolean) => {
   const $data: IProgressPotions = {
     percent: 0,
     interval: 100,
