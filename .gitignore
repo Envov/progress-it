@@ -65,6 +65,7 @@ typings/
 .next
 
 # build output
+dist/
 lib/
 esm
 
