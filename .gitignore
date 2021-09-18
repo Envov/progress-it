@@ -60,11 +60,10 @@ typings/
 
 # dotenv environment variables file
 .env
-
 # next.js build output
 .next
 
-# build output
+# build outsput
 dist/
 lib/
 esm
