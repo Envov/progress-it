@@ -1,49 +1,75 @@
 {
   "name": "progress-boolean",
-  "version": "0.0.0",
-  "private": true,
+  "version": "1.0.0",
+  "description": "map boolean as floating number",
+  "main": "lib/index.js",
+  "module": "esm/index.js",
+  "sideEffects": false,
+  "files": [
+    "lib/",
+    "esm/"
+  ],
+  "types": "lib/index.d.ts",
+  "typings": "lib/index.d.ts",
   "scripts": {
-    "docusaurus": "docusaurus",
-    "start": "docusaurus start",
-    "build": "docusaurus build",
-    "swizzle": "docusaurus swizzle",
-    "deploy": "docusaurus deploy",
-    "clear": "docusaurus clear",
-    "serve": "docusaurus serve",
-    "write-translations": "docusaurus write-translations",
-    "write-heading-ids": "docusaurus write-heading-ids",
-    "typecheck": "tsc"
+    "build": "tsc",
+    "watch": "tsc --watch"
   },
   "dependencies": {
-    "@docusaurus/core": "2.0.0-beta.6",
-    "@docusaurus/preset-classic": "2.0.0-beta.6",
-    "@mdx-js/react": "^1.6.21",
-    "@svgr/webpack": "^5.5.0",
-    "clsx": "^1.1.1",
-    "file-loader": "^6.2.0",
-    "prism-react-renderer": "^1.2.1",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "url-loader": "^4.1.1"
+    "@types/node": "^16.9.1",
+    "@typescript-eslint/eslint-plugin": "^4.31.0",
+    "@typescript-eslint/parser": "^4.31.0",
+    "eslint": "^7.32.0",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.4.2"
   },
-  "devDependencies": {
-    "@docusaurus/module-type-aliases": "2.0.0-beta.6",
-    "@tsconfig/docusaurus": "^1.0.4",
-    "@types/react": "^17.0.14",
-    "@types/react-helmet": "^6.1.2",
-    "@types/react-router-dom": "^5.1.8",
-    "typescript": "^4.3.5"
+  
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UILKUNP/progress-boolean.git"
   },
-  "browserslist": {
-    "production": [
-      ">0.5%",
-      "not dead",
-      "not op_mini all"
+  "author": "UILUNP",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/UILKUNP/progress-boolean/issues"
+  },
+  "homepage": "https://github.com/UILKUNP/progress-boolean#readme",
+  "config": {
+    "commitizen": {
+      "path": "git-cz"
+    }
+  },
+  "release": {
+    "branches": [
+      "master",
+      {
+        "name": "next",
+        "prerelease": "rc"
+      }
     ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
+    "verifyConditions": [
+      "@semantic-release/changelog",
+      "@semantic-release/npm",
+      "@semantic-release/git"
+    ],
+    "prepare": [
+      "@semantic-release/changelog",
+      "@semantic-release/npm",
+      "@semantic-release/git"
     ]
+  },
+  "lint-staged": {
+    "src/**/**/*.{ts,tsx}": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "volta": {
+    "node": "14.17.6",
+    "yarn": "1.22.11"
+  },
+  "collective": {
+    "type": "opencollective",
+    "url": "https://opencollective.com/react-use"
   }
 }
