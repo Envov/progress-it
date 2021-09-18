@@ -1,6 +1,6 @@
-## 🤘🏼map boolean as floating number
+## 🤞🏻map  anything as  floating number 
 ```javascript
-import progress from "progress-boolean"
+import progress from "progress-it"
 const stateSet = progress(console.log)(false);
 setTimeout(()=>stateSet(true),1000)
 ```

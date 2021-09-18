@@ -1,15 +1,15 @@
 {
-  "name": "progress-boolean",
+  "name": "progress-it",
   "version": "1.0.0",
   "description": "map boolean as floating number",
-  "main": "lib/index.js",
-  "module": "esm/index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
   "sideEffects": false,
   "files": [
     "dist/"
   ],
-  "types": "lib/index.d.ts",
-  "typings": "lib/index.d.ts",
+  "types": "dist/index.d.ts",
+  "typings": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
     "watch": "tsc --watch"
