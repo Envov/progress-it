@@ -15,6 +15,7 @@
     </h3>
 </p>
 
+## start
 ```shell
 yarn add progress-it 
 or
@@ -29,8 +30,7 @@ const finish=()=>stateSetter(true)
 const fail=()=>stateSetter('fail')
 setTimeout(finish,1000)
 ```
-
-#### output
+### output  
 ```shell
 0.0000001 false
 0.0000002 false
@@ -40,4 +40,15 @@ setTimeout(finish,1000)
 # after 1000ms 
 1 true
 ```
-
+## api
+```typescript
+type Effect = (percent: number, state: boolean | 'fail') => void;
+interface IProgressPotions {
+    percent: number;
+    interval: number;
+    speed: number;
+}
+type Setter=(newState: boolean | 'fail')=>Setter
+const progress: (effect: Effect, option: Partial<IProgressPotions>) => (initState: boolean) => (newState: boolean) => Setter;
+const stateSetter:Setter = progress(effect)(false);
+```

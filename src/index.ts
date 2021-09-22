@@ -3,6 +3,7 @@ const ifElse =
     (x: boolean) =>
       fn1(x) ? fn2(x) : fn3(x);
 type Effect = (percent: number, state: boolean|'fail') => void;
+
 interface IProgressPotions {
   percent: number;
   interval: number;
