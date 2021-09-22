@@ -15,7 +15,7 @@
     "resolveJsonModule": true,
     "strictPropertyInitialization": false,
     "rootDir": "src",
-    "outDir": "dist"
+    "outDir": "progress-it"
   },
   "typeRoots": [
     "node_modules/@types"
