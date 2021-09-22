@@ -28,11 +28,13 @@
     <span id="progress-bar-percent"></span>
     <div id="progress-bar"></div>
     <script>
+      var progress=window.progress.default
       var effect = function(percent, state){
           document.querySelector("#progress-bar").className=state+'-bg'
           document.querySelector("#progress-bar-percent").innerText =state+ ','+( percent*100) +"%";
           document.querySelector("#progress-bar").style.width = (percent * 100) + "%";
         };
+        // script has default
       var stateSetter = progress(effect)(false);
     </script>
   </body>
