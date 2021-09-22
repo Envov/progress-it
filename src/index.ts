@@ -4,16 +4,15 @@ const ifElse =
       fn1(x) ? fn2(x) : fn3(x);
 type Effect = (percent: number, state: boolean|'fail') => void;
 type Setter = (newState: boolean | 'fail') => Setter
-type progress= (effect: Effect, option: Partial<IProgressPotions>) => (initState: boolean) => (newState: boolean) => Setter;
-interface IProgressPotions {
+type progress = (effect: Effect, option?: Partial<IProgressPotions>) => (initState: boolean) => (newState: boolean | 'fail') => Setter;
+type IProgressPotions ={
   percent: number;
-  interval: number;
+  interval: number; 
   speed: number;
   timeLine: number;
   timer: number | undefined;
 }
-
-const progress: progress = (effect: Effect, option: Partial<IProgressPotions>) => (state: boolean) => {
+const progress: progress = (effect: Effect, option?: Partial<IProgressPotions>) => (state: boolean) => {
   const $data: IProgressPotions = {
    
     interval: 100,
@@ -56,5 +55,6 @@ const progress: progress = (effect: Effect, option: Partial<IProgressPotions>) =
   return setter;
 };
 export default progress
+  
 
 

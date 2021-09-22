@@ -6093,10 +6093,10 @@ process@^0.11.10:
   resolved "https://registry.npmjs.org/process/-/process-0.11.10.tgz#7332300e840161bda3e69a1d1d91a7d4bc16f182"
   integrity sha1-czIwDoQBYb2j5podHZGn1LwW8YI=
 
-progress-it@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/progress-it/-/progress-it-1.0.2.tgz#42d16ba73725e59050757859bd79d532f4a9e14b"
-  integrity sha512-3ye4qyzszVxqidJDKM6HeGV2znVwy0KgTbcZlC/JixqHS3UCVhdyte0I6Ywu6iX3GY8FnR/byIZ/SYFlclmZfw==
+progress-it@^1.0.4, progress-it@^1.0.7:
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/progress-it/-/progress-it-1.0.7.tgz#108765cb10dd4012eefb2e4a0722211eefb82858"
+  integrity sha512-Qy+YtnBeAhW3AR1Lp5+EHPoRAeItYNyq9xa+EwSbFL5brv/0B3/dlXrjlUBwEUmwK8Nhq04KZQN8OGH3WYSuGw==
   dependencies:
     "@babel/core" "^7.14.3"
     "@babel/preset-env" "^7.14.4"
@@ -6111,6 +6111,7 @@ progress-it@^1.0.2:
     copy-webpack-plugin "^6.2.1"
     eslint "^7.28.0"
     jest "^27.0.4"
+    progress-it "^1.0.4"
     ts-jest "^27.0.3"
     ts-loader "^8.0.14"
     ts-node "^10.0.0"

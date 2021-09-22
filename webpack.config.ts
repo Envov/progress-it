@@ -2,18 +2,16 @@ import path from 'path'
 import webpack from 'webpack'
 import CopyWebpackPlugin from 'copy-webpack-plugin'
 import { CleanWebpackPlugin } from 'clean-webpack-plugin'
-
 const outputPath = path.resolve(__dirname, 'progress-it')
-
 module.exports = {
   mode: process.env.NODE_ENV,
-  target: 'web',
   entry: path.join(__dirname, 'src/index.ts'),
   output: {
     path: outputPath,
     filename: 'index.min.js',
     libraryTarget: 'umd',
-    globalObject: 'this'
+    library:"progress",
+    globalObject: 'this',
   },
   devServer: {
     open: true,
