@@ -1,6 +1,7 @@
 {
   "name": "progress-it",
   "version": "1.0.1",
+  "main": "progress-it/index.min.js",
   "description": "map boolean as floating number",
   "scripts": {
     "dev": "webpack server --node-env development",

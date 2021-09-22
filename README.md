@@ -1,10 +1,16 @@
-## 🤞🏻map  boolean as  floating number 
+
 <p align="center">
 <br>
-    <img src="https://i.loli.net/2021/09/22/xOlca5ZnTYWMbvV.png" alt="Logo" width="500">
+    <img src="https://i.loli.net/2021/09/22/9Aoqg3bVxId4BCN.png" alt="Logo">
     <h3 align="center">
+        🤞🏻 Map  Boolean As  Floating Number, Simple And Functional
+        <br/>
         <a href="https://uilkunp.github.io/progress-it/">
-            example
+            Preview
+        </a>
+        |
+        <a href="https://github.com/UILKUNP/progress-it/blob/master/example/index.html">
+            Example
         </a>
     </h3>
 </p>
@@ -19,7 +25,8 @@ npm install progress-it
 import progress from "progress-it"
 const effect=console.log
 const stateSetter = progress(effect)(false);
-const finish=(set=>()=>set(true))(stateSetter)
+const finish=()=>stateSetter(true)
+const fail=()=>stateSetter('fail')
 setTimeout(finish,1000)
 ```
 
