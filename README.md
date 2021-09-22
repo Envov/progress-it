@@ -15,7 +15,7 @@
     </h3>
 </p>
 
-## start
+# start
 ```shell
 yarn add progress-it 
 or
@@ -40,7 +40,7 @@ setTimeout(finish,1000)
 # after 1000ms 
 1 true
 ```
-## api
+# api
 ```typescript
 type Effect = (percent: number, state: boolean | 'fail') => void;
 interface IProgressPotions {
