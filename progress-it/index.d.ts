@@ -1,4 +1,6 @@
 declare type Effect = (percent: number, state: boolean | 'fail') => void;
+declare type Setter = (newState: boolean | 'fail') => Setter;
+declare type progress = (effect: Effect, option: Partial<IProgressPotions>) => (initState: boolean) => (newState: boolean) => Setter;
 interface IProgressPotions {
     percent: number;
     interval: number;
@@ -6,5 +8,5 @@ interface IProgressPotions {
     timeLine: number;
     timer: number | undefined;
 }
-export declare const progress: (effect: Effect, option: Partial<IProgressPotions>) => (state: boolean) => (newState: boolean) => any | undefined;
-export {};
+declare const progress: progress;
+export default progress;

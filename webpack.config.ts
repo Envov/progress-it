@@ -18,7 +18,6 @@ module.exports = {
   devServer: {
     open: true,
     port: 8080,
-    host:"172.16.26.69",
     writeToDisk: true,
     contentBase: outputPath
   },

@@ -3,7 +3,8 @@ const ifElse =
     (x: boolean) =>
       fn1(x) ? fn2(x) : fn3(x);
 type Effect = (percent: number, state: boolean|'fail') => void;
-
+type Setter = (newState: boolean | 'fail') => Setter
+type progress= (effect: Effect, option: Partial<IProgressPotions>) => (initState: boolean) => (newState: boolean) => Setter;
 interface IProgressPotions {
   percent: number;
   interval: number;
@@ -11,7 +12,8 @@ interface IProgressPotions {
   timeLine: number;
   timer: number | undefined;
 }
-export const progress = (effect: Effect, option: Partial<IProgressPotions>) => (state: boolean) => {
+
+const progress: progress = (effect: Effect, option: Partial<IProgressPotions>) => (state: boolean) => {
   const $data: IProgressPotions = {
    
     interval: 100,
@@ -36,7 +38,7 @@ export const progress = (effect: Effect, option: Partial<IProgressPotions>) => (
     )
   // begging ..
   $data.timer = $stateInitFlow($data)(state);
-  const setter = (newState: boolean) => {
+  const setter: Setter = (newState) => {
     //no a boolean, callback with fail
     if ((typeof newState) !== 'boolean'){
       $data.timer && clearInterval($data.timer);
@@ -48,11 +50,11 @@ export const progress = (effect: Effect, option: Partial<IProgressPotions>) => (
       $data.timer && clearInterval($data.timer);
       $data.percent = 1;
       effect($data.percent, newState);
-    }else{
-      return setter;
     }
+    return setter;
   }
   return setter;
 };
+export default progress
 
 
