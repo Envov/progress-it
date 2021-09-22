@@ -13,10 +13,11 @@ interface IProgressPotions {
 }
 export const progress = (effect: Effect, option: Partial<IProgressPotions>) => (state: boolean) => {
   const $data: IProgressPotions = {
-    percent: 0,
+   
     interval: 100,
     speed: 0.01,
     ...option,
+    percent: 0,
     timeLine: 0,
     timer: undefined
   }

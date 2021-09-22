@@ -44,9 +44,8 @@ setTimeout(finish,1000)
 ```typescript
 type Effect = (percent: number, state: boolean | 'fail') => void;
 interface IProgressPotions {
-    percent: number;
-    interval: number;
-    speed: number;
+    interval: number;//default 100
+    speed: number; //default 0.01
 }
 type Setter=(newState: boolean | 'fail')=>Setter
 const progress: (effect: Effect, option: Partial<IProgressPotions>) => (initState: boolean) => (newState: boolean) => Setter;
