@@ -1,6 +1,6 @@
 {
   "name": "progress-it",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "main": "progress-it/index.min.js",
   "description": "map boolean as floating number",
   "scripts": {
@@ -24,7 +24,6 @@
     "copy-webpack-plugin": "^6.2.1",
     "eslint": "^7.28.0",
     "jest": "^27.0.4",
-    "progress-it": "^1.0.7",
     "ts-jest": "^27.0.3",
     "ts-loader": "^8.0.14",
     "ts-node": "^10.0.0",
