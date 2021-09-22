@@ -11,14 +11,14 @@ module.exports = {
   entry: path.join(__dirname, 'src/index.ts'),
   output: {
     path: outputPath,
-    filename: 'index.js',
+    filename: 'index.min.js',
     libraryTarget: 'umd',
     globalObject: 'this'
   },
   devServer: {
     open: true,
-    https: true,
     port: 8080,
+    host:"172.16.26.69",
     writeToDisk: true,
     contentBase: outputPath
   },
