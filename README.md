@@ -1,7 +1,7 @@
 
 <p align="center">
 <br>
-    <img src="https://i.loli.net/2021/09/22/9Aoqg3bVxId4BCN.png" alt="Logo">
+    <img src="https://i.loli.net/2021/09/22/v3jEtF8lnhPGgKz.gif" alt="Logo">
     <h3 align="center">
         🤞🏻 Map  Boolean As  Floating Number, Simple And Functional
         <br/>
