@@ -44,4 +44,5 @@ const progress = (effect: Effect, option: Partial<IProgressPotions>) => (state: 
   };
   return setter;
 };
+
 export default progress;
