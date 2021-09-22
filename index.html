@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>progress-it</title>
+    <script src="./index.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+   
+    <h1 >
+      <a href="https://github.com/UILKUNP/progress-it">progress-it Github</a><span>👀</span>
+    </h1>
+     <h3> <span>🤞🏻</span><span class="title">map boolean as floating number</span></h3>
+     <br>
+    <p>
+      <b>progress-bar</b>
+      <button onclick="stateSetter(true)">Finish</button>
+      <button onclick="stateSetter('fail')">Fail</button>
+
+    </p>
+    <span id="progress-bar-percent"></span>
+    <div id="progress-bar"></div>
+    <script>
+      var effect = function(percent, state){
+          document.querySelector("#progress-bar").className=state+'-bg'
+          document.querySelector("#progress-bar-percent").innerText =state+ ','+( percent*100) +"%";
+          document.querySelector("#progress-bar").style.width = (percent * 100) + "%";
+        };
+      var stateSetter = progress(effect)(false);
+    </script>
+  </body>
+</html>
