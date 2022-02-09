@@ -1,6 +1,6 @@
 {
   "name": "progress-it",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "main": "progress-it/index.min.js",
   "description": "map boolean as floating number",
   "scripts": {
@@ -34,13 +34,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/UILKUNP/progress-boolean.git"
+    "url": "git+https://github.com/Envov/progress-it.git"
   },
   "typings": "progress-it/index.d.ts",
-  "author": "UILUNP",
+  "author": "Envov",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/UILKUNP/progress-boolean/issues"
+    "url": "https://github.com/Envov/progress-it/issues"
   },
-  "homepage": "https://github.com/UILKUNP/progress-boolean#readme"
+  "homepage": "https://github.com/Envov/progress-it#readme"
 }
