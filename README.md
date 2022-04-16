@@ -5,11 +5,11 @@
     <h3 align="center">
         🤞🏻 Map  Boolean As  Floating Number,  Functional 
         <br/>
-        <a href="https://uilkunp.github.io/progress-it/">
+        <a href="https://envov.github.io/progress-it/">
             Preview
         </a>
         |
-        <a href="https://github.com/UILKUNP/progress-it/blob/master/example/index.html">
+        <a href="https://envov.github.io/progress-it/progress-it/blob/master/example/index.html">
             Example
         </a>
     </h3>
