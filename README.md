@@ -9,7 +9,7 @@
             Preview
         </a>
         |
-        <a href="https://envov.github.io/progress-it/progress-it/blob/master/example/index.html">
+        <a href="https://github.com/Envov/progress-it/blob/master/example/index.html">
             Example
         </a>
     </h3>
