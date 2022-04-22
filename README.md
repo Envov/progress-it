@@ -3,7 +3,9 @@
 <br>
     <img src="https://i.loli.net/2021/09/22/v3jEtF8lnhPGgKz.gif" alt="Logo">
     <h3 align="center">
-        Realy simple fake progress，Create any progress-bar you like use functional api
+        Realy simple fake progress
+        <br>
+        Create any progress-bar you like use functional api
         <br/>
         <a href="https://envov.github.io/progress-it/">
             Preview
